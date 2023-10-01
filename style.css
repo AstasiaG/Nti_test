@@ -67,8 +67,15 @@
   align-items: center;
 }
 
-.header__logo {
+.header__logo,
+.header__search,
+.scroll__text,
+.scroll__icon,
+.arrow {
   display: block;
+}
+
+.header__logo {
   width: 70px;
   height: 70px;
   margin-right: 60px;
@@ -93,7 +100,6 @@
 }
 
 .header__search {
-  display: block;
   width: 20px;
   height: 20px;
   cursor: pointer;
@@ -132,4 +138,126 @@
   background-color: var(--accent);
   color: var(--bg);
   border-radius: 50%;
+}
+
+.first-screen {
+  display: flex;
+  width: 100%;
+  background-color: var(--grey-bg);
+}
+
+.first-screen__slider {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 3;
+  max-width: 1151px;
+  padding: 253px 0 158px;
+  margin-left: auto;
+
+  background-image: url(./img/firstscreen_bg.png);
+  background-repeat: no-repeat;
+  background-position: top 97px left 0;
+}
+
+.scroll-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 169px;
+  gap: 16.5px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.scroll__text {
+  writing-mode: vertical-lr;
+  font: var(--roboto-light-small);
+  color: var(--dark-grey);
+  transform: rotate(180deg);
+}
+
+.scroll__icon {
+  width: 25px;
+}
+
+.first-screen__title {
+  position: relative;
+  z-index: 10;
+  margin-left: 108px;
+}
+
+.before-header {
+  font: var(--roboto-light-main);
+  color: var(--dark-grey);
+  margin-bottom: 15px;
+}
+
+.title {
+  width: 446px;
+  margin-bottom: 60px;
+
+  font: var(--roboto-regular-big);
+  line-height: normal;
+}
+
+.button {
+  display: flex;
+  align-self: center;
+}
+
+.arr__circle {
+  display: flex;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  margin-right: 12px;
+
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+
+.arrow {
+  width: 12px;
+  vertical-align: middle;
+}
+
+.button__text {
+  font: var(--roboto-regular-buttons);
+  color: var(--black);
+}
+
+.first-screen__image {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 60px;
+}
+
+.slider__dots {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  margin: 0 0 11px 466px;
+  gap: 10px;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+  background-color: var(--grey);
+}
+
+.active {
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+  background-color: var(--black);
 }
