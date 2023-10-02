@@ -49,6 +49,12 @@ body {
   color: var(--black);
 }
 
+button {
+  border: 0;
+  background-color: transparent;
+  margin-top: 57px;
+}
+
 .page-header {
   width: 100%;
 }
@@ -66,7 +72,8 @@ body {
 .header__left-side,
 .scroll-btn,
 .advantages__list,
-.news__header {
+.news__header,
+.contacts__content-wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -418,7 +425,7 @@ body {
   border-radius: 10px;
 }
 
-.item__title {
+.advantage__title {
   margin: 25px 0 13px;
   font: var(--euclid-bold-big);
   color: var(--bg);
@@ -512,4 +519,135 @@ body {
   border: 12px solid var(--bg);
   border-radius: 50%;
   background-color: var(--black);
+}
+
+.contacts {
+  position: relative;
+  padding: 346px 0 0 0;
+
+  background-color: var(--grey-bg);
+  background-clip: content-box;
+  background-image: url(./img/contacts_bg.png);
+  background-repeat: no-repeat;
+  background-position: left 0 bottom 59px;
+}
+
+.contacts__content-wrapper {
+  width: 100%;
+  margin: -346px auto 180px;
+
+  background-color: var(--super-light-grey);
+  border-radius: 20px;
+}
+
+.contacts__content {
+  position: relative;
+  z-index: 5;
+  width: 50%;
+  padding: 100px 100px 111px;
+}
+
+.contacts__description,
+.contacts__form-description {
+  margin: 18px 0 48px;
+
+  font: var(--roboto-light-small);
+  line-height: 150%;
+  color: var(--dark-grey);
+}
+
+.contacts__item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 47px;
+}
+
+.contacts__item:nth-child(2) {
+  margin-bottom: 72px;
+}
+
+.contact__info {
+  width: 358px;
+  margin-left: 17px;
+}
+
+.contact__name {
+  margin-bottom: 8px;
+  font: var(--roboto-light-main);
+  color: var(--dark-grey);
+}
+
+.contact {
+  font: var(--roboto-regular-medium-second);
+}
+
+.social__icon {
+  margin-left: 18px;
+}
+
+.contacts__image {
+  position: absolute;
+  z-index: 2;
+  top: 142px;
+  left: 40%;
+}
+
+.contacts__form-wrapper {
+  width: 50%;
+  padding: 100px 129px;
+  background-color: var(--black);
+  border-radius: 0 20px 20px 0;
+}
+
+.contacts__form {
+  position: relative;
+  z-index: 5;
+}
+
+.white,
+.contacts__form-description {
+  color: var(--bg);
+}
+
+.contacts__form-description {
+  margin-bottom: 53px;
+}
+
+.form__group {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.form__input {
+  width: 434px;
+  padding: 19px 23px 16px;
+
+  background-color: var(--black);
+  border-radius: 20px;
+  border: 1.5px solid var(--super-light-grey);
+
+  font: var(--roboto-light-main);
+  color: var(--bg);
+}
+
+.form__input::placeholder {
+  color: transparent;
+}
+
+.form__label {
+  position: absolute;
+  z-index: 6;
+  top: -10px;
+  left: 16px;
+  display: inline-block;
+  padding: 0 10px;
+  font: var(--roboto-light-main);
+  color: var(--grey-bg);
+  background-color: var(--black);
+}
+
+.text-area {
+  width: 434px;
+  height: 158px;
+  resize: none;
 }
