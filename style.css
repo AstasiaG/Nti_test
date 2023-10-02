@@ -61,12 +61,12 @@ button {
 
 .header-content,
 .container {
-  width: 1415px;
+  width: 1400px;
   margin: 0 auto;
 }
 
 .header-content {
-  padding: 27px 0 27px 17px;
+  padding: 27px 0 27px;
   align-items: center;
 }
 
@@ -170,8 +170,8 @@ button {
   display: flex;
   align-items: flex-end;
   flex-grow: 3;
-  max-width: 1133px;
-  padding: 253px 0 158px;
+  max-width: 1152px;
+  padding-bottom: 159px;
   margin-left: auto;
 
   background-image: url(./img/firstscreen_bg.png);
@@ -183,7 +183,7 @@ button {
   flex-direction: column;
   align-items: center;
   height: 169px;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .link {
@@ -210,7 +210,7 @@ button {
 .before-header {
   font: var(--roboto-light-main);
   color: var(--dark-grey);
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 }
 
 .title {
@@ -230,12 +230,15 @@ button {
   align-items: center;
 }
 
+.button {
+  gap: 17px;
+}
+
 .arr__circle {
   display: flex;
   justify-content: center;
   width: 55px;
   height: 55px;
-  margin-right: 12px;
 
   border-radius: 50%;
   background-color: var(--accent);
@@ -263,7 +266,7 @@ button {
   z-index: 10;
   display: flex;
   align-items: center;
-  margin: 0 0 11px 466px;
+  margin: 0 0 11px 480px;
   gap: 10px;
 }
 
@@ -302,11 +305,15 @@ button {
   color: var(--black);
 }
 
+.arrow__big {
+  width: 104.5px;
+}
+
 .catalog {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  padding: 164px 0;
+  padding: 160px 0 180px;
 }
 
 .catalog__title {
@@ -343,7 +350,7 @@ button {
 }
 
 .item__counts {
-  margin-bottom: 2px;
+  margin-bottom: 6px;
   font: var(--roboto-light-main);
   color: var(--dark-grey);
 }
@@ -372,19 +379,19 @@ button {
 
 .item__third {
   top: 81px;
-  right: 52px;
+  right: 26px;
 }
 
 .item__ford {
   top: 59px;
-  right: 63.5px;
+  right: 56px;
 }
 
 .advantages {
   background-color: var(--grey-bg);
   background-image: url(./img/advantages_bg.png);
   background-repeat: no-repeat;
-  background-position: left 0 top 152px;
+  background-position: left 6px top 165px;
 }
 
 .advantages__title {
@@ -399,7 +406,7 @@ button {
 .advantages__title-content {
   display: inline-block;
   width: 518px;
-  margin: 96px 0 0 80px;
+  margin: 96px 0 0 -80px;
 }
 
 .advantages__text {
@@ -410,12 +417,13 @@ button {
 }
 
 .advantages__list {
+  margin-top: -46px;
   padding-bottom: 46px;
 }
 
 .advantage__item {
   width: 330px;
-  padding: 30px 22px 37px;
+  padding: 30px 29px 37px;
 
   border-radius: 18px;
   background-color: var(--black);
@@ -445,7 +453,11 @@ button {
 }
 
 .news {
-  padding: 172px 0 180px;
+  padding: 175px 0 180px;
+}
+
+.news__header {
+  align-items: flex-start;
 }
 
 .news__image-wrapper {
@@ -454,7 +466,7 @@ button {
 
 .news__description {
   width: 721px;
-  margin: 25px 0 70px;
+  margin: 30px 0 70px;
 
   font: var(--roboto-light-main);
   line-height: 150%;
@@ -464,12 +476,13 @@ button {
 .news__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 65px;
+  gap: 40px;
 }
 
 .news__item {
   position: relative;
   width: 415px;
+  margin-right: 25px;
 
   border-radius: 45px 0 45px 0;
   background-color: var(--bg);
@@ -499,7 +512,13 @@ button {
 }
 
 .news__item-description {
+  position: relative;
   padding: 24px 20px 26px 30px;
+  margin-top: -50px;
+
+  background-image: url(./img/news_block.png);
+  background-repeat: no-repeat;
+  background-position: top -40px left -80px;
 }
 
 .news__title {
@@ -519,10 +538,10 @@ button {
 .small__button {
   position: absolute;
   justify-content: center;
-  bottom: 100px;
-  right: 31px;
-  width: 65px;
-  height: 65px;
+  bottom: 63px;
+  right: 25px;
+  width: 67px;
+  height: 67px;
 
   border: 12px solid var(--bg);
   border-radius: 50%;
@@ -531,20 +550,21 @@ button {
 
 .contacts {
   position: relative;
-  padding: 346px 0 0 0;
+  padding: 347px 0 0 0;
 
   background-color: var(--grey-bg);
   background-clip: content-box;
   background-image: url(./img/contacts_bg.png);
   background-repeat: no-repeat;
-  background-position: left 0 bottom 59px;
+  background-position: left 10px bottom 56px;
 }
 
 .contacts__wrapper {
-  padding-bottom: 187px;
+  padding-bottom: 180px;
 }
 
 .contacts__content-wrapper {
+  position: relative;
   width: 100%;
   margin: -346px auto 0;
 
@@ -556,7 +576,7 @@ button {
   position: relative;
   z-index: 5;
   width: 50%;
-  padding: 100px 100px 111px;
+  padding: 100px 100px 106px;
 }
 
 .contacts__description,
@@ -571,11 +591,11 @@ button {
 .contacts__item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 47px;
+  margin-bottom: 44px;
 }
 
 .contacts__item:nth-child(2) {
-  margin-bottom: 72px;
+  margin-bottom: 68px;
 }
 
 .contact__info {
@@ -584,7 +604,7 @@ button {
 }
 
 .contact__name {
-  margin-bottom: 8px;
+  margin: 8px 0 7px;
   font: var(--roboto-light-main);
   color: var(--dark-grey);
 }
@@ -593,15 +613,19 @@ button {
   font: var(--roboto-regular-medium-second);
 }
 
+.social__links {
+  margin: 60px 0 0 3px;
+}
+
 .social__icon {
-  margin-left: 18px;
+  margin-right: 15px;
 }
 
 .contacts__image {
   position: absolute;
   z-index: 2;
   top: 142px;
-  left: 40%;
+  left: 35%;
 }
 
 .contacts__form-wrapper {
@@ -622,12 +646,12 @@ button {
 }
 
 .contacts__form-description {
-  margin-bottom: 53px;
+  margin-bottom: 65px;
 }
 
 .form__group {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 52px;
 }
 
 .form__input {
@@ -660,26 +684,26 @@ button {
 
 .text-area {
   width: 434px;
-  height: 158px;
+  height: 143px;
   resize: none;
 }
 
 .page__footer {
   background-image: url(./img/footer_bg.png);
   background-repeat: no-repeat;
-  background-position: right -36px top 133px;
+  background-position: right 0 top 148px;
 }
 
 .page__footer-nav {
   display: flex;
-  padding: 60px 0;
-  gap: 180px;
+  padding: 60px 0 50px;
+  gap: 183px;
 }
 
 .page__footer-nav > .logo {
   width: 112px;
   height: 112px;
-  margin-right: 10px;
+  margin: 30px 10px 0 0;
 }
 
 .footer__nav-title {
@@ -699,13 +723,22 @@ button {
 
 .footer__contacts {
   align-items: center;
-  padding: 40px 0;
+  padding: 28px 0;
 }
 
 .footer__contacts > .contact__info {
   width: auto;
+  margin-left: 0;
 }
 
-.footer__contacts > .contact__name {
+.footer__contacts > .contact__info .contact__name {
  margin-bottom: 11px;
+}
+
+.footer__contacts > .contact__info .contact {
+  font: var(--roboto-regular-main);
+}
+
+.footer__contacts > .social__links {
+  margin: 0 -17px 0;
 }
