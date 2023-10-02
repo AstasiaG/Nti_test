@@ -45,6 +45,10 @@
   box-sizing: border-box;
 }
 
+body {
+  color: var(--black);
+}
+
 .page-header {
   width: 100%;
 }
@@ -61,7 +65,8 @@
 .header__right-side,
 .header__left-side,
 .scroll-btn,
-.advantages__list {
+.advantages__list,
+.news__header {
   display: flex;
   justify-content: space-between;
 }
@@ -199,6 +204,7 @@
 
 .title {
   font: var(--roboto-regular-big);
+  color: var(--black);
 }
 
 .main__title {
@@ -207,7 +213,8 @@
   line-height: normal;
 }
 
-.button {
+.button,
+.small__button {
   display: flex;
   align-items: center;
 }
@@ -420,4 +427,89 @@
 .item__description {
   font: var(--euclid-light-medium);
   color: var(--medium-grey);
+}
+
+.news {
+  padding: 172px 0 180px;
+}
+
+.news__image-wrapper {
+  border-radius: 0 0 45px 0;
+}
+
+.news__description {
+  width: 721px;
+  margin: 25px 0 70px;
+
+  font: var(--roboto-light-main);
+  line-height: 150%;
+  color: var(--dark-grey);
+}
+
+.news__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 65px;
+}
+
+.news__item {
+  position: relative;
+  width: 415px;
+
+  border-radius: 45px 0 45px 0;
+  background-color: var(--bg);
+  box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.05);
+}
+
+.news__date {
+  position: absolute;
+  top: 65px;
+  right: -25px;
+
+  width: 50px;
+  height: 97px;
+  padding: 24px 10px;
+
+  border-radius: 15px;
+  background: var(--bg);
+  box-shadow: 6px 6px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.date__text {
+  font: var(--roboto-black-medium);
+}
+
+.small__date {
+  font: var(--roboto-light-super-small);
+}
+
+.news__item-description {
+  padding: 24px 20px 26px 30px;
+}
+
+.news__title {
+  width: 268px;
+  margin-bottom: 11px;
+
+  font: var(--roboto-bold-medium);
+  color: var(--black);
+}
+
+.description {
+  position: relative;
+  width: 365px;
+  font: var(--roboto-regular-small-second);
+}
+
+.small__button {
+  position: absolute;
+  justify-content: center;
+  bottom: 100px;
+  right: 31px;
+  width: 65px;
+  height: 65px;
+
+  border: 12px solid var(--bg);
+  border-radius: 50%;
+  background-color: var(--black);
 }
