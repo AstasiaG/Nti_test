@@ -63,6 +63,9 @@ button {
 .container {
   width: 1415px;
   margin: 0 auto;
+}
+
+.header-content {
   padding: 27px 0 27px 17px;
   align-items: center;
 }
@@ -73,7 +76,8 @@ button {
 .scroll-btn,
 .advantages__list,
 .news__header,
-.contacts__content-wrapper {
+.contacts__content-wrapper,
+.footer__contacts {
   display: flex;
   justify-content: space-between;
 }
@@ -405,6 +409,10 @@ button {
   color: var(--dark-grey);
 }
 
+.advantages__list {
+  padding-bottom: 46px;
+}
+
 .advantage__item {
   width: 330px;
   padding: 30px 22px 37px;
@@ -475,7 +483,7 @@ button {
 
   width: 50px;
   height: 97px;
-  padding: 24px 10px;
+  padding: 24px 13px;
 
   border-radius: 15px;
   background: var(--bg);
@@ -532,9 +540,13 @@ button {
   background-position: left 0 bottom 59px;
 }
 
+.contacts__wrapper {
+  padding-bottom: 187px;
+}
+
 .contacts__content-wrapper {
   width: 100%;
-  margin: -346px auto 180px;
+  margin: -346px auto 0;
 
   background-color: var(--super-light-grey);
   border-radius: 20px;
@@ -650,4 +662,50 @@ button {
   width: 434px;
   height: 158px;
   resize: none;
+}
+
+.page__footer {
+  background-image: url(./img/footer_bg.png);
+  background-repeat: no-repeat;
+  background-position: right -36px top 133px;
+}
+
+.page__footer-nav {
+  display: flex;
+  padding: 60px 0;
+  gap: 180px;
+}
+
+.page__footer-nav > .logo {
+  width: 112px;
+  height: 112px;
+  margin-right: 10px;
+}
+
+.footer__nav-title {
+  margin-bottom: 15px;
+  font: var(--roboto-regular-medium);
+  line-height: normal;
+}
+
+.footer__nav-list {
+  list-style-type: none;
+}
+
+.footer__nav-item {
+  margin-bottom: 10px;
+  font: var(--roboto-light-small);
+}
+
+.footer__contacts {
+  align-items: center;
+  padding: 40px 0;
+}
+
+.footer__contacts > .contact__info {
+  width: auto;
+}
+
+.footer__contacts > .contact__name {
+ margin-bottom: 11px;
 }
