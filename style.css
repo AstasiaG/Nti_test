@@ -240,6 +240,7 @@ button {
 
 .button {
   gap: 17px;
+  cursor: pointer;
 }
 
 .arr__circle {
@@ -265,8 +266,8 @@ button {
 .first-screen__image {
   position: absolute;
   display: block;
-  top: -200px;
-  right: 60px;
+  top: -183px;
+  right: 30px;
 }
 
 .slider__dots {
@@ -275,7 +276,7 @@ button {
   right: 40px;
   display: flex;
   align-items: center;
-  margin: 0 0 11px 480px;
+  margin: 0 0 14px 480px;
   gap: 10px;
 }
 
@@ -341,6 +342,7 @@ button {
 
 .catalog__item {
   position: relative;
+  display: block;
   width: 440px;
   height: 371px;
   padding: 40px;
@@ -470,8 +472,8 @@ button {
   align-items: flex-start;
 }
 
-.news__image-wrapper {
-  border-radius: 0 0 45px 0;
+.news__image {
+  border-radius: 45px 0;
 }
 
 .news__description {
@@ -529,6 +531,7 @@ button {
   background-image: url(./img/news_block.png);
   background-repeat: no-repeat;
   background-position: top -40px left -80px;
+  border-radius: 0 0 45px 0;
 }
 
 .news__title {
@@ -556,6 +559,7 @@ button {
   border: 12px solid var(--bg);
   border-radius: 50%;
   background-color: var(--black);
+  cursor: pointer;
 }
 
 .contacts {
@@ -625,6 +629,7 @@ button {
 
 .social__links {
   margin: 60px 0 0 3px;
+  cursor: pointer;
 }
 
 .social__icon {
@@ -751,4 +756,62 @@ button {
 
 .footer__contacts > .social__links {
   margin: 0 -17px 0;
+}
+
+.user__menu {
+  position: absolute;
+  z-index: 20;
+  top: 123px;
+  right: 318px;
+  width: 405px;
+
+  border-radius: 20px;
+  background-color: var(--bg);
+  box-shadow: 0px 14px 75px rgba(0, 0, 0, 0.13);
+}
+
+.user__menu::after {
+  content: "";
+  position: fixed;
+  top: 115px;
+  right: 513px;
+  display: block;
+  width: 18px;
+  height: 18px;
+
+  border-radius: 2px;
+  background: var(--bg);
+  transform: rotate(45deg);
+}
+
+.user__menu-header,
+.user__menu-item {
+  border-bottom: 1px solid var(--grey-bg);
+}
+
+.user__menu-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.user__name,
+.user__menu-item {
+  font: var(--roboto-regular-medium-second);
+  font-size: 20px;
+  color: #000;
+}
+
+.user__menu-list {
+  list-style-type: none;
+}
+
+.user__menu-item {
+  margin-top: -1px;
+  padding: 20px 29px;
+}
+
+.d-none {
+  display: none;
 }

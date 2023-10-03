@@ -1,5 +1,7 @@
 const sliderItem = Array.from(document.querySelectorAll('.first-screen__slide'));
 const dots = Array.from(document.querySelectorAll('.dot'));
+const userMenu = document.querySelector('.user__menu');
+const userIcon = document.querySelector('div.user');
 let sliderIndex = 0;
 let itemWidth = sliderItem[0].offsetWidth;
 
@@ -33,3 +35,6 @@ function dotsSwiper() {
 for (let i = 0; i < dots.length; i++) {
   dots[i].addEventListener( "click" , dotsSwiper);
 }
+userIcon.addEventListener('click', () => {
+  userMenu.classList.toggle('d-none');
+})
