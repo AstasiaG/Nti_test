@@ -177,6 +177,13 @@ button {
   background-image: url(./img/firstscreen_bg.png);
   background-repeat: no-repeat;
   background-position: top 97px left 0;
+  overflow: hidden;
+}
+
+.first-screen__slide {
+  position: relative;
+  width: 1151px;
+  transition: all 0.5s ease-in-out;
 }
 
 .scroll-btn {
@@ -205,6 +212,7 @@ button {
   position: relative;
   z-index: 10;
   margin-left: 108px;
+  margin-right: 560px;
 }
 
 .before-header {
@@ -257,13 +265,14 @@ button {
 .first-screen__image {
   position: absolute;
   display: block;
-  top: 74px;
+  top: -200px;
   right: 60px;
 }
 
 .slider__dots {
-  position: relative;
+  position: absolute;
   z-index: 10;
+  right: 40px;
   display: flex;
   align-items: center;
   margin: 0 0 11px 480px;
@@ -276,6 +285,7 @@ button {
 
   border-radius: 50%;
   background-color: var(--grey);
+  cursor: pointer;
 }
 
 .active {
