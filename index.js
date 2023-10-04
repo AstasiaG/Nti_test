@@ -5,6 +5,7 @@ const userIcon = document.querySelector('div.user');
 const burgerMenu = document.querySelector('.nav__list');
 const burgerMenuBtn = document.querySelector('.burger-menu');
 const advantagesTitles = document.querySelectorAll('p.advantage__title');
+const userName = document.querySelector('.user__name-header');
 let windowWidth = document.documentElement.clientWidth;
 let sliderIndex = 0;
 let itemWidth = sliderItem[0].offsetWidth;
@@ -60,11 +61,13 @@ for (let i = 0; i < dots.length; i++) {
 function MouseEnter () {
   clearTimeout(timer);
   userMenu.classList.remove('d-none');
+  userName.style.opacity = '1';
 }
 
 function MouseLeave () {
   timer = setTimeout(() => {
     userMenu.classList.add('d-none');
+    userName.style.opacity = '0';
   }, 200);
 }
 
