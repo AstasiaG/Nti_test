@@ -2,6 +2,8 @@ const sliderItem = Array.from(document.querySelectorAll('.first-screen__slide'))
 const dots = Array.from(document.querySelectorAll('.dot'));
 const userMenu = document.querySelector('.user__menu');
 const userIcon = document.querySelector('div.user');
+const burgerMenu = document.querySelector('.header__nav');
+const burgerMenuBtn = document.querySelector('.burger-menu');
 let sliderIndex = 0;
 let itemWidth = sliderItem[0].offsetWidth;
 
@@ -15,7 +17,7 @@ function SwipeSlider () {
     sliderIndex ++;
 }
 
-setInterval(SwipeSlider, 4000);
+//setInterval(SwipeSlider, 4000);
 
 function dotsSwiper() {
   if(this.className.includes('active')) {
@@ -37,4 +39,8 @@ for (let i = 0; i < dots.length; i++) {
 }
 userIcon.addEventListener('click', () => {
   userMenu.classList.toggle('d-none');
+})
+
+burgerMenuBtn.addEventListener('click', () => {
+  burgerMenu.classList.toggle('d-none');
 })

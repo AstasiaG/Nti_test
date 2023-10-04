@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nti test</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css" media="screen and (max-width: 1920px) and (min-width: 376px)">
+  <link rel="stylesheet" href="./mobile.css" media="screen and (max-width: 375px)">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
     <div class="header-content">
       <div class="header__left-side">
         <img class="header__logo" src="./img/logo.jpg" alt="Logo company Dell">
-        <nav class="header__nav">
+        <nav class="header__nav d-none">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="link" href="#0">Главная</a>
@@ -39,15 +40,18 @@
         <div class="icon__wrapper user">
           <img class="small__icon" src="./svg/account_icon.svg">
         </div>
-        <div class="icon__wrapper">
+        <div class="icon__wrapper lines">
           <img class="small__icon" src="./svg/sm_icon.svg">
         </div>
-        <div class="icon__wrapper">
+        <div class="icon__wrapper likes">
           <img class="small__icon" src="./svg/heart_icon.png">
         </div>
         <div class="icon__wrapper">
           <img class="small__icon" src="./svg/bag_icon.svg">
           <div class="items">3</div>
+        </div>
+        <div class="icon__wrapper burger-menu">
+          <div class="burger-line"></div>
         </div>
       </div>
       <div class="user__menu d-none">
@@ -172,31 +176,31 @@
       </div>
       <a class="link catalog__item" href="#0">
         <p class="item__number">01</p>
-        <img class="item__image item__first" src="./img/product_1.png">
+        <img class="item__image item__1" src="./img/product_1.png">
         <p class="item__counts">105 товаров</p>
         <span class="item__title">Ноутбуки</span>
       </a>
       <a class="link catalog__item" href="#0">
         <p class="item__number">02</p>
-        <img class="item__image item__second" src="./img/product_2.png">
+        <img class="item__image item__2" src="./img/product_2.png">
         <p class="item__counts">65 товаров</p>
         <span class="item__title">Персональные компьютеры</span>
       </a>
       <a class="link catalog__item" href="#0">
         <p class="item__number">03</p>
-        <img class="item__image item__third" src="./img/product_3.png">
+        <img class="item__image item__3" src="./img/product_3.png">
         <p class="item__counts">13 товаров</p>
         <span class="item__title">Cерверы</span>
       </a>
       <a class="link catalog__item" href="#0">
         <p class="item__number">04</p>
-        <img class="item__image item__ford" src="./img/product_4.png">
+        <img class="item__image item__4" src="./img/product_4.png">
         <p class="item__counts">2345 товаров</p>
         <span class="item__title">Dell EMC</span>
       </a>
       <a class="link catalog__item" href="#0">
         <p class="item__number">05</p>
-        <img class="item__image" src="./img/product_5.png">
+        <img class="item__image item__5" src="./img/product_5.png">
         <p class="item__counts">195 товаров</p>
         <span class="item__title">Запасные части к Dell EMC</span>
       </a>
@@ -423,62 +427,64 @@
     <div class="container">
       <div class="page__footer-nav">
         <img class="logo" src="./img/logo.jpg">
-        <div class="footer__nav-wrapper">
-          <p class="footer__nav-title">Каталог</p>
-          <ul class="footer__nav-list">
-            <li class="footer__nav-item">
-              <a class="link" href="#0">Ноутбуки</a>
-            </li>
-            <li class="footer__nav-item">
-              <a class="link" href="#0">Персональные компьютеры</a>
-            </li>
-            <li class="footer__nav-item">
-              <a class="link" href="#0">Серверы</a>
-            </li>
-            <li class="footer__nav-item">
-              <a class="link" href="#0">Dell EMC</a>
-            </li>
-            <li class="footer__nav-item">
-              <a class="link" href="#0">Запасные части к Dell EMC</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__nav-wrapper">
-          <p class="footer__nav-title">Личный кабинет</p>
-          <ul class="footer__nav-list">
-            <li class="footer__nav-item">
-              <a class="link" href="#0">Профиль</a>
-            </li>
-            <li class="footer__nav-item">
-              <a class="link" href="#0">История заказов</a>
-            </li>
-            <li class="footer__nav-item">
-              <a class="link" href="#0">SMS-уведомления</a>
-            </li>
-            <li class="footer__nav-item">
-              <a class="link" href="#0">Избранное</a>
-            </li>
-            <li class="footer__nav-item">
-              <a class="link" href="#0">Сравнение товаров</a>
-            </li>
-          </ul>
-        </div>
-         <div class="footer__nav-wrapper">
-          <p class="footer__nav-title">Помощь</p>
-          <ul class="footer__nav-list">
-            <li class="footer__nav-item">
-              <a class="link" href="#0">Доставка и оплата</a>
-            </li>
-            <li class="footer__nav-item">
-              <a class="link" href="#0">Контакты</a>
-            </li>
-            <li class="footer__nav-item">
-              <a class="link" href="#0">FAQ</a>
-            </li>
-            <li class="footer__nav-item">
-              <a class="link" href="#0">Наш АСЦ</a>
-            </li>
-          </ul>
+        <div class="footer__nav-menu-wrapper">
+          <div class="footer__nav-wrapper">
+            <p class="footer__nav-title">Помощь</p>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="link" href="#0">Доставка и оплата</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="link" href="#0">Контакты</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="link" href="#0">FAQ</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="link" href="#0">Наш АСЦ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav-wrapper">
+            <p class="footer__nav-title">Личный кабинет</p>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="link" href="#0">Профиль</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="link" href="#0">История заказов</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="link" href="#0">SMS-уведомления</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="link" href="#0">Избранное</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="link" href="#0">Сравнение товаров</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav-wrapper">
+            <p class="footer__nav-title">Каталог</p>
+            <ul class="footer__nav-list flex">
+              <li class="footer__nav-item">
+                <a class="link" href="#0">Ноутбуки</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="link" href="#0">Персональные компьютеры</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="link" href="#0">Серверы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="link" href="#0">Dell EMC</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="link" href="#0">Запасные части к Dell EMC</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <hr>
