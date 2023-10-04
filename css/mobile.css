@@ -190,9 +190,9 @@ button {
 }
 
 .lines,
-.likes {
+.likes,
+.user__name-header {
   display: none;
-  transition: 0.3s ease-in-out;
 }
 
 .burger-line {
