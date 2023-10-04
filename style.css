@@ -67,7 +67,6 @@ button {
 
 .header-content {
   padding: 27px 0 27px;
-  align-items: center;
 }
 
 .header-content,
@@ -82,7 +81,8 @@ button {
   justify-content: space-between;
 }
 
-.header__left-side {
+.header__left-side,
+.header-content {
   align-items: center;
 }
 
@@ -173,7 +173,6 @@ button {
   position: relative;
   display: flex;
   align-items: flex-end;
-  flex-grow: 3;
   max-width: 1152px;
   padding-bottom: 159px;
   margin-left: auto;
@@ -752,7 +751,7 @@ button {
 .footer__contacts {
   align-items: center;
   padding: 21px 0;
-  gap: 153px;
+  gap: 147px;
 }
 
 .footer__contacts > .contact__info {
@@ -769,6 +768,7 @@ button {
 }
 
 .footer__contacts > .social__links {
+  display: flex;
   padding: 25px 0 18px;
   margin: 0;
 }

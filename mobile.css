@@ -546,7 +546,7 @@ button {
   background-image: url(./svg/advant_item_bg.svg);
   background-size: 121px 64px;
   background-repeat: no-repeat;
-  background-position: top 0 right 0;
+  background-position: top 0 right -9px;
 }
 
 .item__icon {
@@ -938,6 +938,7 @@ button {
 }
 
 .footer__contacts > .social__links {
+  display: flex;
   margin: 7px 0 0;
 }
 
@@ -949,9 +950,9 @@ button {
 .user__menu {
   position: absolute;
   z-index: 20;
-  top: 123px;
-  right: 318px;
-  width: 405px;
+  top: 90px;
+  right: 15px;
+  width: 345px;
 
   border-radius: 20px;
   background-color: var(--bg);
@@ -961,8 +962,8 @@ button {
 .user__menu::after {
   content: "";
   position: fixed;
-  top: 115px;
-  right: 513px;
+  top: 81px;
+  right: 149px;
   display: block;
   width: 18px;
   height: 18px;
