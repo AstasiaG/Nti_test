@@ -42,5 +42,9 @@ userIcon.addEventListener('click', () => {
 })
 
 burgerMenuBtn.addEventListener('click', () => {
-  burgerMenu.classList.toggle('d-none');
+  if(burgerMenu.style.display === 'block') {
+    burgerMenu.style.display = 'none';
+  } else {
+    burgerMenu.style.display = 'block';
+  }
 })
