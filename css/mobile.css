@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Trickster";
   font-weight: 300 600;
-  src: 
-  url(./fonts/Euclid\ Circular\ A\ Light.woff)
-  format("woff"),
-  url(./fonts/Euclid\ Circular\ A\ Bold.woff)
-  format("woff");
+  src:
+    url(../fonts/Euclid\ Circular\ A\ Light.woff)
+    format("woff"),
+    url(../fonts/Euclid\ Circular\ A\ Bold.woff)
+    format("woff");
 }
 
 :root {
@@ -260,7 +260,7 @@ button {
   max-width: 375px;
   padding: 80px 15px 345px;
 
-  background-image: url(./img/firstscreen_bg.png);
+  background-image: url(../img/firstscreen_bg.png);
   background-repeat: no-repeat;
   background-size: 79%;
   background-position: top 18px left 31px;
@@ -377,7 +377,7 @@ button {
   padding: 60px 15px;
 
   background-color: var(--light-grey);
-  background-image: url(./img/firstscreen_special.png);
+  background-image: url(../img/firstscreen_special.png);
   background-repeat: no-repeat;
   background-size: 65%;
   background-position: top 15px right 6px;
@@ -495,7 +495,7 @@ button {
   width: 375px;
   padding: 0 15px;
   background-color: var(--grey-bg);
-  background-image: url(./img/advantages_bg.png);
+  background-image: url(../img/advantages_bg.png);
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: left 14px top 373px;
@@ -543,7 +543,7 @@ button {
 
   border-radius: 10px;
   background-color: var(--black);
-  background-image: url(./svg/advant_item_bg.svg);
+  background-image: url(../svg/advant_item_bg.svg);
   background-size: 121px 64px;
   background-repeat: no-repeat;
   background-position: top 0 right -9px;
@@ -654,7 +654,7 @@ button {
   padding: 21px 21px 19px 20px;
   margin-top: -58px;
 
-  background-image: url(./img/news_block.png);
+  background-image: url(../img/news_block.png);
   background-repeat: no-repeat;
   background-size: 329px 113px;
   background-position: top -2px left -5px;
@@ -838,7 +838,7 @@ button {
 
 .page__footer {
   background-color: var(--grey-bg);
-  background-image: url(./img/firstscreen_bg.png);
+  background-image: url(../img/firstscreen_bg.png);
   background-repeat: no-repeat;
   background-size: 55%;
   background-position: right 19px bottom 27px;

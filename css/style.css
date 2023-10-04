@@ -2,9 +2,9 @@
   font-family: "Trickster";
   font-weight: 300 600;
   src: 
-  url(./fonts/Euclid\ Circular\ A\ Light.woff)
+  url(../fonts/Euclid\ Circular\ A\ Light.woff)
   format("woff"),
-  url(./fonts/Euclid\ Circular\ A\ Bold.woff)
+  url(../fonts/Euclid\ Circular\ A\ Bold.woff)
   format("woff");
 }
 
@@ -177,7 +177,7 @@ button {
   padding-bottom: 159px;
   margin-left: auto;
 
-  background-image: url(./img/firstscreen_bg.png);
+  background-image: url(../img/firstscreen_bg.png);
   background-repeat: no-repeat;
   background-position: top 97px left 0;
   overflow: hidden;
@@ -308,7 +308,7 @@ button {
   padding: 321px 288px 163px 40px;
 
   background-color: var(--light-grey);
-  background-image: url(./img/firstscreen_special.png);
+  background-image: url(../img/firstscreen_special.png);
   background-repeat: no-repeat;
   background-position: top -245px right -393px;
 }
@@ -407,7 +407,7 @@ button {
 
 .advantages {
   background-color: var(--grey-bg);
-  background-image: url(./img/advantages_bg.png);
+  background-image: url(../img/advantages_bg.png);
   background-repeat: no-repeat;
   background-position: left 6px top 165px;
 }
@@ -445,7 +445,7 @@ button {
 
   border-radius: 18px;
   background-color: var(--black);
-  background-image: url(./svg/advant_item_bg.svg);
+  background-image: url(../svg/advant_item_bg.svg);
   background-repeat: no-repeat;
   background-position: top 0 right 0;
 }
@@ -534,7 +534,7 @@ button {
   padding: 24px 20px 26px 30px;
   margin-top: -50px;
 
-  background-image: url(./img/news_block.png);
+  background-image: url(../img/news_block.png);
   background-repeat: no-repeat;
   background-position: top 0 left 0;
   border-radius: 0 0 45px 0;
@@ -574,7 +574,7 @@ button {
 
   background-color: var(--grey-bg);
   background-clip: content-box;
-  background-image: url(./img/contacts_bg.png);
+  background-image: url(../img/contacts_bg.png);
   background-repeat: no-repeat;
   background-position: left 10px bottom 56px;
 }
@@ -710,7 +710,7 @@ button {
 }
 
 .page__footer {
-  background-image: url(./img/footer_bg.png);
+  background-image: url(../img/footer_bg.png);
   background-repeat: no-repeat;
   background-position: right 0 top 148px;
 }
