@@ -8,6 +8,7 @@ const advantagesTitles = document.querySelectorAll('p.advantage__title');
 let windowWidth = document.documentElement.clientWidth;
 let sliderIndex = 0;
 let itemWidth = sliderItem[0].offsetWidth;
+let timer;
 
 
 window.addEventListener("resize", ChangeAdvantText);
@@ -56,30 +57,34 @@ for (let i = 0; i < dots.length; i++) {
   dots[i].addEventListener( "click" , dotsSwiper);
 }
 
-userIcon.addEventListener('click', () => {
-  userMenu.classList.toggle('d-none');
+function MouseEnter () {
+  clearTimeout(timer);
+  userMenu.classList.remove('d-none');
+}
 
-  burgerMenu.classList.remove('nav__list-active');
-  burgerMenu.closest('nav').classList.remove('active__bg');
-  burgerMenuBtn.classList.remove('burger-active');
-})
+function MouseLeave () {
+  timer = setTimeout(() => {
+    userMenu.classList.add('d-none');
+  }, 200);
+}
+
+userIcon.addEventListener('mouseenter', MouseEnter);
+userIcon.addEventListener('mouseleave', MouseLeave);
+
+userMenu.addEventListener('mouseenter', MouseEnter);
+userMenu.addEventListener('mouseleave', MouseLeave);
 
 burgerMenuBtn.addEventListener('click', () => {
   burgerMenu.classList.toggle('nav__list-active');
   burgerMenu.closest('nav').classList.toggle('active__bg');
   burgerMenuBtn.classList.toggle('burger-active');
-  userMenu.classList.add('d-none');
 })
 
 document.addEventListener('click', (el) => {
   const burgerWind = el.composedPath().includes(burgerMenu);
-  const userWind = el.composedPath().includes(userMenu);
   if(!burgerWind && !burgerMenuBtn) {
     burgerMenu.classList.remove('nav__list-active');
     burgerMenu.closest('nav').classList.remove('active__bg');
     burgerMenuBtn.classList.remove('burger-active');
-  }
-  if (!userWind && !userIcon) {
-    userMenu.classList.add('d-none');
   }
 })
