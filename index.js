@@ -85,9 +85,11 @@ burgerMenuBtn.addEventListener('click', () => {
 
 document.addEventListener('click', (el) => {
   const burgerWind = el.composedPath().includes(burgerMenu);
-  if(!burgerWind && !burgerMenuBtn) {
+  const burgerBtn = el.composedPath().includes(burgerMenuBtn);
+  console.log(!burgerWind,!burgerBtn)
+  if(!burgerWind && !burgerBtn) {
     burgerMenu.classList.remove('nav__list-active');
     burgerMenu.closest('nav').classList.remove('active__bg');
     burgerMenuBtn.classList.remove('burger-active');
   }
-})
+});
