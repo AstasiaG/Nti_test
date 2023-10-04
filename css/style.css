@@ -804,6 +804,10 @@ button {
   border-bottom: 1px solid var(--grey-bg);
 }
 
+.user__menu-item:last-child {
+  border-bottom: 0;
+}
+
 .user__menu-header {
   display: flex;
   align-items: center;
