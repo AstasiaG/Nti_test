@@ -844,10 +844,14 @@ button {
   background-position: right 19px bottom 27px;
 }
 
+.page__footer-wrapper {
+  padding: 0 16px;
+}
+
 .page__footer-nav {
   display: flex;
   flex-wrap: wrap;
-  padding: 27px 16px;
+  padding: 27px 0;
 }
 
 .page__footer-nav > .logo {
@@ -925,7 +929,7 @@ button {
 
 .footer__contacts {
   flex-direction: column;
-  padding: 31px 15px 29px;
+  padding: 31px 0 29px;
 }
 
 .footer__contacts > .contact__info {
