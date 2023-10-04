@@ -2,10 +2,22 @@ const sliderItem = Array.from(document.querySelectorAll('.first-screen__slide'))
 const dots = Array.from(document.querySelectorAll('.dot'));
 const userMenu = document.querySelector('.user__menu');
 const userIcon = document.querySelector('div.user');
-const burgerMenu = document.querySelector('.header__nav');
+const burgerMenu = document.querySelector('.nav__list');
 const burgerMenuBtn = document.querySelector('.burger-menu');
+const advantagesTitles = document.querySelectorAll('p.advantage__title');
+let windowWidth = document.documentElement.clientWidth;
 let sliderIndex = 0;
 let itemWidth = sliderItem[0].offsetWidth;
+
+if(windowWidth < 500) {
+  advantagesTitles[0].innerHTML = 'У нас самые выгодные<br>и низкие цены';
+  advantagesTitles[3].innerHTML = 'Мы являемся официальным партнером DELL';
+  advantagesTitles[3].nextElementSibling.innerHTML = 'Мы лучший официальный поставщик продукции DELL в России<br>и странах СНГ';
+} else if(windowWidth > 500) {
+  advantagesTitles[0].innerHTML = 'Самые выгодные и низкие цены';
+  advantagesTitles[3].innerHTML = 'Официальный партнер DELL';
+  advantagesTitles[3].nextElementSibling.innerHTML = 'Официальный поставщик продукции DELL в России и странах СНГ';
+}
 
 function SwipeSlider () {
     if (sliderIndex > dots.length - 1) {
@@ -17,7 +29,7 @@ function SwipeSlider () {
     sliderIndex ++;
 }
 
-//setInterval(SwipeSlider, 4000);
+setInterval(SwipeSlider, 4000);
 
 function dotsSwiper() {
   if(this.className.includes('active')) {
@@ -42,9 +54,7 @@ userIcon.addEventListener('click', () => {
 })
 
 burgerMenuBtn.addEventListener('click', () => {
-  if(burgerMenu.style.display === 'block') {
-    burgerMenu.style.display = 'none';
-  } else {
-    burgerMenu.style.display = 'block';
-  }
+  burgerMenu.classList.toggle('nav__list-active');
+  burgerMenu.closest('nav').classList.toggle('active__bg');
+  burgerMenuBtn.classList.toggle('burger-active');
 })
